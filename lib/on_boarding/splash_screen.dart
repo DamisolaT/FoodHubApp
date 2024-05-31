@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:foodhub_app/view/login/welcome_screen.dart';
+
+import 'package:foodhub_app/view/login_view/welcome_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

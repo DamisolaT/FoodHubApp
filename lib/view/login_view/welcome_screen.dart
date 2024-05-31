@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foodhub_app/view/login/signup_screen.dart';
+
+import 'package:foodhub_app/view/login_view/signup_screen.dart';
+import 'package:foodhub_app/view/widgets.dart/SocialButton.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -201,37 +203,3 @@ class WelcomeScreen extends StatelessWidget {
   }
 }
 
-class SocialButton extends StatelessWidget {
-  final String imagePath;
-  final String text;
-
-  const SocialButton({
-    Key? key,
-    required this.imagePath,
-    required this.text,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(24.0),
-      ),
-      padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
-      child: Row(
-        children: [
-          Image.asset(imagePath, height: 25),
-          SizedBox(width: 5),
-          Text(
-            text,
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 20,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
